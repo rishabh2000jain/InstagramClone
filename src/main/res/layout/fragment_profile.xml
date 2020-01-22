@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <EditText
+        android:id="@+id/profilename"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your profile name"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/bio"
+        android:hint="enter your bio"
+        app:layout_constraintTop_toBottomOf="@id/profilename"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/profession"
+        app:layout_constraintTop_toBottomOf="@id/bio"
+        android:layout_marginTop="10dp"
+        android:hint="enter your profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/hobbies"
+        app:layout_constraintTop_toBottomOf="@id/profession"
+        android:layout_marginTop="10dp"
+        android:hint="enter your hobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/sport"
+        android:layout_width="match_parent"
+        android:hint="enter your favourite sport"
+        app:layout_constraintTop_toBottomOf="@id/hobbies"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/updatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="update"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sport"
+         />
+
+</android.support.constraint.ConstraintLayout>

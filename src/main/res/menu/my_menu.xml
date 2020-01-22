@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="uplode image"
+        android:id="@+id/camerabutton"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/camerabutton"/>
+    <item
+        android:title="logout"
+        android:id="@+id/logoutmenu"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+</menu>
